@@ -193,13 +193,12 @@ h3 {
 }
 
 .grid-portfolio {
-  margin: 0 auto;
-  width: 60%;
+  width: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  grid-gap: 2vh;
+  // grid-template-rows: 1fr;
+  grid-gap: 1vh;
 
   img {
     width: 80vw;
@@ -245,6 +244,11 @@ h3 {
     margin: 0 auto;
     border: 3px solid white;
     color: white;
+
+    &:visited {
+      color: white;
+      border-color: white;
+    }
 
     &:hover {
       color: black;
@@ -293,7 +297,7 @@ h3 {
 
 /* media queries */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
   #main-nav.shown {
     display: none;
   }
@@ -390,22 +394,33 @@ h3 {
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 
     img {
       width: 250px;
       border-radius: 50%;
       margin-top: 100px;
     }
+
+    .about p {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #cv {
+    width: 100%;
+    height: 100%;
   }
 
   #grid {
-    height: 40vh;
+    width: 100%;
+    height: 100%;
   }
 
   .grid-portfolio {
-    width: 90vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -495,14 +510,25 @@ h3 {
     width: 250px;
     border-radius: 50%;
     margin-top: 100px;
+
+    .about p {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #cv {
+    width: 100%;
+    height: 100%;
   }
 
   #grid {
-    height: 40vh;
+    width: 100%;
+    height: 100%;
   }
 
   .grid-portfolio {
-    width: 90vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -561,6 +587,7 @@ h3 {
 @media screen and (min-width: 768px) {
   header h1 {
     font-size: 28px;
+    padding-left: 20px;
   }
 
   #main-nav {
@@ -589,13 +616,18 @@ h3 {
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    height: 105vh;
-    width: 100vw;
+    height: 105%;
+    width: 100%;
 
     img {
       width: 250px;
       border-radius: 50%;
-      margin-top: 200px;
+      margin-top: 150px;
+    }
+
+    .about p {
+      width: 100%;
+      height: 100%;
     }
 
     a {
@@ -605,15 +637,18 @@ h3 {
   }
 
   #experience {
-    height: 25vh;
+    width: 100%;
+    height: 100%;
   }
 
   #cv {
-    height: 25vh;
+    width: 100%;
+    height: 100%;
   }
 
   #grid {
-    height: 50vh;
+    width: 100%;
+    height: 100%;
   }
 
   #work {
@@ -622,65 +657,70 @@ h3 {
   }
 
   .grid-portfolio {
-    width: 90vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 25% 25% 25%;
-  }
 
-  .grid-box1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: red;
-  }
+    .grid-box1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: red;
+    }
 
-  .grid-box2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: red;
-  }
+    .grid-box2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: red;
+    }
 
-  .grid-box3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: red;
-  }
+    .grid-box3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: red;
+    }
 
-  .grid-box4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: red;
-  }
+    .grid-box4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: red;
+    }
 
-  .grid-box5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: red;
-  }
+    .grid-box5 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: red;
+    }
 
-  .grid-box6 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: red;
+    .grid-box6 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: red;
+    }
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header h1 {
-    font-size: 32px;
+    font-size: 28px;
+    padding-left: 20px;
+  }
+
+  .jumb-header {
+    font-size: 2em;
   }
 
   #main-nav {
@@ -690,11 +730,6 @@ h3 {
     ul {
       display: inline-flex;
       align-self: flex-end;
-    }
-
-    a {
-      vertical-align: middle;
-      font-size: 18px;
     }
   }
 
@@ -714,26 +749,39 @@ h3 {
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    height: 105vh;
-    width: 100vw;
+    height: 105%;
+    width: 100%;
 
     img {
       width: 250px;
       border-radius: 50%;
-      margin-top: 200px;
+      margin-top: 150px;
+    }
+
+    .about p {
+      width: 100%;
+      height: 100%;
+    }
+
+    a {
+      vertical-align: middle;
+      font-size: 16px;
     }
   }
 
   #experience {
-    height: 25vh;
+    width: 100%;
+    height: 100%;
   }
 
   #cv {
-    height: 25vh;
+    width: 100%;
+    height: 100%;
   }
 
   #grid {
-    height: 50vh;
+    width: 100%;
+    height: 100%;
   }
 
   #work {
@@ -742,66 +790,70 @@ h3 {
   }
 
   .grid-portfolio {
-    width: 90vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 25% 25% 25%;
-  }
 
-  .grid-box1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: red;
-  }
-  .grid-box2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: red;
-  }
-  .grid-box3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: red;
-  }
-  .grid-box4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: red;
-  }
-  .grid-box5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: red;
-  }
-  .grid-box6 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: red;
+    .grid-box1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: red;
+    }
+
+    .grid-box2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: red;
+    }
+
+    .grid-box3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: red;
+    }
+
+    .grid-box4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: red;
+    }
+
+    .grid-box5 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: red;
+    }
+
+    .grid-box6 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: red;
+    }
   }
 }
+
 @media screen and (min-width: 1440px) {
   header h1 {
     font-size: 40px;
   }
 
-  #jumbotron {
-    .jumb-header h2 {
-      padding: 20px;
-      font-size: 2.5em;
-    }
+  .jumb-header {
+    padding: 20px;
+    font-size: 2em;
   }
 
   #main-nav {
@@ -839,8 +891,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    height: 105vh;
-    width: 100vw;
+    height: 105%;
+    width: 100%;
 
     img {
       width: 250px;
@@ -858,11 +910,14 @@ h3 {
       font-size: 20px;
       margin: 15px;
       text-align: center;
+      width: 100%;
+      height: 100%;
     }
   }
 
   #experience {
-    height: 25vh;
+    width: 100%;
+    height: 100%;
   }
 
   #cv {
@@ -879,53 +934,60 @@ h3 {
   }
 
   .grid-portfolio {
-    width: 90vw;
+    width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25% 25% 25%;
-  }
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45% 45%;
+    margin: 0;
+    padding: 0;
 
-  .grid-box1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: red;
-  }
-  .grid-box2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: red;
-  }
-  .grid-box3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: red;
-  }
-  .grid-box4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: red;
-  }
-  .grid-box5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: red;
-  }
-  .grid-box6 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: red;
+    .grid-box1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: red;
+    }
+
+    .grid-box2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: red;
+    }
+
+    .grid-box3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: red;
+    }
+
+    .grid-box4 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: red;
+    }
+
+    .grid-box5 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: red;
+    }
+
+    .grid-box6 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: red;
+    }
   }
 }
