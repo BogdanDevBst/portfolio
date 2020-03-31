@@ -11,9 +11,9 @@ body {
   height: 100%;
 }
 
-section {
-  padding: 8px 16px;
-}
+// section {
+//   padding: 8px 16px;
+// }
 
 /* navbar */
 
@@ -127,6 +127,7 @@ main {
     text-align: center;
     padding: 15px;
     font-size: 20px;
+    color: black;
   }
 
   .about {
@@ -141,8 +142,7 @@ main {
   }
 
   p {
-    font-size: 20px;
-    margin: 15px;
+    font-size: 18px;
     text-align: center;
   }
 }
@@ -182,51 +182,62 @@ h3 {
 
 /* Work Section */
 
-#work {
+.first-section {
   background-color: white;
-
-  h3 {
-    color: black;
-    text-transform: uppercase;
-    margin: 20px;
-  }
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.grid-portfolio {
+.second-section {
+  background-color: white;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 30px 10px 30px 10px;
+}
+
+img {
   width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  // grid-template-rows: 1fr;
-  grid-gap: 1vh;
+  height: auto;
+  object-fit: cover;
+}
 
-  img {
-    width: 80vw;
-  }
+.article-container {
+  padding: 25px;
+  text-align: center;
+  height: 100%;
+  cursor: pointer;
+}
 
-  .fab.fa-github {
-    color: white;
-  }
+h2 {
+  margin: 0;
+  text-align: center;
+  color: white;
 
-  .grid-box {
-    position: relative;
+  font-size: 1rem;
+}
 
-    &:hover {
-      bottom: 5px;
-    }
+h3 {
+  font-size: 1rem;
+}
 
-    span {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 1.5em;
-      color: white;
+div p {
+  font-style: italic;
+  font-weight: lighter;
+}
 
-      &:hover {
-        color: grey;
-      }
-    }
-  }
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /* My CV */
@@ -264,7 +275,7 @@ h3 {
   background-color: black;
   text-align: center;
 
-  h4 {
+  p {
     color: white;
     padding: 20px;
   }
@@ -284,7 +295,7 @@ h3 {
 */
 
 #lab_social_icon_footer #social-gh:hover {
-  color: white;
+  color: yellow;
 }
 
 #lab_social_icon_footer #social-li:hover {
@@ -298,95 +309,8 @@ h3 {
 /* media queries */
 
 @media screen and (min-width: 320px) {
-  #main-nav.shown {
-    display: none;
-  }
-
-  header {
-    padding: 8px 16px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    a {
-      vertical-align: middle;
-    }
-
-    a:hover {
-      cursor: pointer;
-      color: black;
-    }
-
-    .fas:hover {
-      cursor: pointer;
-      color: rgb(0, 0, 0);
-    }
-
-    h1 {
-      margin: 16px 0px;
-      font-size: 1.5em;
-    }
-
-    h1 a {
-      text-decoration: none;
-      color: black;
-    }
-
-    h1 a:visited {
-      color: black;
-    }
-
-    nav ul {
-      list-style: none;
-      text-transform: uppercase;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    nav li {
-      display: block;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: inherit;
-      width: 100%;
-      display: inline-block;
-      padding: 8px;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      text-decoration: none;
-      cursor: pointer;
-      color: rgb(0, 0, 0);
-    }
-  }
-
   header h1 {
     font-size: 18px;
-  }
-
-  #main-nav {
-    display: flex;
-    flex-direction: row;
-
-    ul {
-      display: inline-flex;
-      align-self: flex-end;
-    }
-  }
-
-  span.fas {
-    display: none;
-  }
-
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
   }
 
   #about {
@@ -396,13 +320,11 @@ h3 {
     background-color: whitesmoke;
     height: 100%;
     width: 100%;
-
     img {
       width: 250px;
       border-radius: 50%;
       margin-top: 100px;
     }
-
     .about p {
       width: 100%;
       height: 100%;
@@ -411,7 +333,7 @@ h3 {
 
   #cv {
     width: 100%;
-    height: 100%;
+    height: 20vh;
   }
 
   #grid {
@@ -419,60 +341,8 @@ h3 {
     height: 100%;
   }
 
-  .grid-portfolio {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .grid-box1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: red;
-  }
-
-  .grid-box2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: red;
-  }
-
-  .grid-box3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: red;
-  }
-
-  .grid-box4 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-color: red;
-  }
-
-  .grid-box5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    background-color: red;
-  }
-
-  .grid-box6 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    background-color: red;
+  article {
+    width: 300px;
   }
 }
 
@@ -525,62 +395,6 @@ h3 {
   #grid {
     width: 100%;
     height: 100%;
-  }
-
-  .grid-portfolio {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .grid-box1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: red;
-  }
-
-  .grid-box2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: red;
-  }
-
-  .grid-box3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: red;
-  }
-
-  .grid-box4 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-color: red;
-  }
-
-  .grid-box5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    background-color: red;
-  }
-
-  .grid-box6 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    background-color: red;
   }
 }
 
@@ -654,62 +468,6 @@ h3 {
   #work {
     width: 100vw;
     height: 105vh;
-  }
-
-  .grid-portfolio {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25% 25% 25%;
-
-    .grid-box1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      background-color: red;
-    }
-
-    .grid-box2 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      background-color: red;
-    }
-
-    .grid-box3 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      background-color: red;
-    }
-
-    .grid-box4 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      background-color: red;
-    }
-
-    .grid-box5 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      background-color: red;
-    }
-
-    .grid-box6 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      background-color: red;
-    }
   }
 }
 
@@ -787,62 +545,6 @@ h3 {
   #work {
     width: 100vw;
     height: 105vh;
-  }
-
-  .grid-portfolio {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25% 25% 25%;
-
-    .grid-box1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      background-color: red;
-    }
-
-    .grid-box2 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      background-color: red;
-    }
-
-    .grid-box3 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      background-color: red;
-    }
-
-    .grid-box4 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      background-color: red;
-    }
-
-    .grid-box5 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      background-color: red;
-    }
-
-    .grid-box6 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      background-color: red;
-    }
   }
 }
 
@@ -931,63 +633,5 @@ h3 {
   #work {
     width: 100vw;
     height: 105vh;
-  }
-
-  .grid-portfolio {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 45% 45%;
-    margin: 0;
-    padding: 0;
-
-    .grid-box1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      background-color: red;
-    }
-
-    .grid-box2 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      background-color: red;
-    }
-
-    .grid-box3 {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      background-color: red;
-    }
-
-    .grid-box4 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      background-color: red;
-    }
-
-    .grid-box5 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      background-color: red;
-    }
-
-    .grid-box6 {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      background-color: red;
-    }
   }
 }
