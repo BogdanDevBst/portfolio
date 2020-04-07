@@ -8,14 +8,11 @@ Clone down the repo to your local machine, open with a live server extension.
 
 ### Prerequisites
 
-```
 A source Code Editor or IDE, a live Sass compiler extension (e.g. Live Sass Compiler), Sass.
-```
-##Deployment
 
-```
+### Deployment
+
 Deployed via github pages.
-```
 
 ## Built With
 
