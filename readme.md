@@ -4,22 +4,23 @@ Portfolio
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Clone down the repo to your local machine, open with a live server extension.
 
 ### Prerequisites
 
 ```
-git clone https://github.com/BogdanDevBst/portfolio.git
+A source Code Editor or IDE, a live Sass compiler extension (e.g. Live Sass Compiler), Sass.
 ```
+##Deployment
 
 ```
-watch Sass
+Deployed via github pages.
 ```
 
 ## Built With
 
-Vanilla Html and SCSS.
+HTML5, Sass/CSS3
 
 ## Authors
 
-- **Bogdan Niculescu** - [BogdanDevBst](https://github.com/BogdanDevBst)
+- **Bogdan Niculescu** - [BogdanDevBst]
