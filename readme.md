@@ -20,10 +20,6 @@ watch Sass
 
 Vanilla Html and SCSS.
 
-## Contributing
-
-Please read [CONTRIBUTING.md]
-
 ## Authors
 
 - **Bogdan Niculescu** - [BogdanDevBst](https://github.com/BogdanDevBst)
