@@ -170,7 +170,7 @@ h3 {
 }
 
 #grid {
-  height: 50vh;
+  height: 40vh;
 
   .grid {
     display: grid;
@@ -347,7 +347,6 @@ a {
 
   #grid {
     width: 100%;
-    height: 100%;
   }
 
   article {
@@ -403,7 +402,7 @@ a {
 
   #grid {
     width: 100%;
-    height: 100%;
+    height: 40vh;
   }
 
   article {
@@ -483,7 +482,7 @@ a {
 
   #grid {
     width: 100%;
-    height: 100%;
+    height: 40vh;
   }
 
   #work {
@@ -570,7 +569,7 @@ a {
 
   #grid {
     width: 100%;
-    height: 100%;
+    height: 40vh;
   }
 
   #work {
@@ -645,7 +644,7 @@ a {
   }
 
   #grid {
-    height: 50vh;
+    height: 60vh;
 
     .grid {
       display: grid;
@@ -653,7 +652,7 @@ a {
       grid-gap: 15vh;
       grid-template-columns: 50px 50px 50px;
       grid-template-rows: 50px 50px 50px;
-      font-size: 50px;
+      font-size: 60px;
       color: white;
     }
   }

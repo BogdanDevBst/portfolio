@@ -188,7 +188,7 @@ h3 {
 }
 
 #grid {
-  height: 50vh;
+  height: 40vh;
 }
 
 #grid .grid {
@@ -392,7 +392,6 @@ a {
   }
   #grid {
     width: 100%;
-    height: 100%;
   }
   article {
     width: 300px;
@@ -446,7 +445,7 @@ a {
   }
   #grid {
     width: 100%;
-    height: 100%;
+    height: 40vh;
   }
   article {
     width: 350px;
@@ -527,7 +526,7 @@ a {
   }
   #grid {
     width: 100%;
-    height: 100%;
+    height: 40vh;
   }
   #work {
     width: 100vw;
@@ -612,7 +611,7 @@ a {
   }
   #grid {
     width: 100%;
-    height: 100%;
+    height: 40vh;
   }
   #work {
     width: 100vw;
@@ -690,7 +689,7 @@ a {
     height: 100%;
   }
   #grid {
-    height: 50vh;
+    height: 60vh;
   }
   #grid .grid {
     display: -ms-grid;
@@ -703,7 +702,7 @@ a {
         grid-template-columns: 50px 50px 50px;
     -ms-grid-rows: 50px 50px 50px;
         grid-template-rows: 50px 50px 50px;
-    font-size: 50px;
+    font-size: 60px;
     color: white;
   }
   #experience {
