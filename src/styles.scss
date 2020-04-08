@@ -13,73 +13,48 @@ body {
 
 /* navbar */
 
-#main-nav.shown {
+.navbar {
+  font-size: 18px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(260deg, #c4c4c4 0%, #ffffff00 100%);
+  color: black;
+}
+
+.main-nav {
+  list-style-type: none;
   display: none;
 }
 
-header {
-  padding: 8px 16px;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  z-index: 1;
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
 
-  a {
-    vertical-align: middle;
-  }
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
 
-  a:hover {
-    cursor: pointer;
-    color: black;
-  }
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
-  .fas:hover {
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-  }
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+}
 
-  h1 {
-    margin: 16px 0px;
-    font-size: 1em;
-  }
-
-  h1 a {
-    text-decoration: none;
-    color: black;
-  }
-
-  h1 a:visited {
-    color: black;
-  }
-
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  nav li {
-    display: block;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: inherit;
-    width: 100%;
-    display: inline-block;
-    padding: 8px;
-  }
-
-  nav a:hover,
-  nav a:focus {
-    text-decoration: none;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-  }
+.active {
+  display: block;
 }
 
 /* landing photo */
@@ -144,42 +119,9 @@ main {
 
   p {
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
     color: black;
     padding-bottom: 15px;
-  }
-}
-
-/* Experience section */
-
-#experience h2,
-h3 {
-  text-align: center;
-  margin: 25px 0 25px 0;
-  color: white;
-  font-size: 20px;
-}
-
-#experience p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 15px auto;
-  text-align: center;
-  color: white;
-}
-
-#grid {
-  height: 40vh;
-
-  .grid {
-    display: grid;
-    justify-content: space-evenly;
-    grid-gap: 5vh;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px;
-    font-size: 50px;
-    color: white;
   }
 }
 
@@ -243,31 +185,36 @@ a {
   color: white;
 }
 
-/* My CV */
+/* Experience section */
 
-#cv {
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#experience h2,
+h3 {
+  text-align: center;
+  margin: 25px 0 25px 0;
+  color: white;
+  font-size: 20px;
+}
 
-  button {
-    width: 130px;
-    height: 40px;
-    background-color: transparent;
-    margin: 0 auto;
-    border: 3px solid white;
+#experience p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 15px auto;
+  text-align: center;
+  color: white;
+}
+
+#grid {
+  height: 50vh;
+
+  .grid {
+    display: grid;
+    justify-content: space-evenly;
+    grid-gap: 5vh;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    font-size: 50px;
     color: white;
-
-    &:visited {
-      color: white;
-      border-color: white;
-    }
-
-    &:hover {
-      color: black;
-      border-color: black;
-    }
   }
 }
 
@@ -312,14 +259,6 @@ a {
 /* media queries */
 
 @media screen and (min-width: 320px) {
-  header {
-    height: 100px;
-
-    h1 {
-      font-size: 24px;
-    }
-  }
-
   #about {
     display: flex;
     flex-direction: column;
@@ -355,35 +294,6 @@ a {
 }
 
 @media screen and (min-width: 425px) {
-  header {
-    padding: 16px;
-
-    h1 {
-      font-size: 24px;
-    }
-  }
-
-  #main-nav {
-    display: flex;
-    flex-direction: row;
-
-    ul {
-      display: inline-flex;
-      align-self: flex-end;
-    }
-  }
-
-  span.fas {
-    display: none;
-  }
-
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-  }
-
   #about img {
     width: 250px;
     border-radius: 50%;
@@ -402,7 +312,7 @@ a {
 
   #grid {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
 
   article {
@@ -415,35 +325,43 @@ a {
     width: 350px;
   }
 
-  h1 {
-    font-size: 36px;
-    padding-left: 20px;
-  }
-
-  .jumb-header h2 {
-    font-size: 2em;
-  }
-
-  #main-nav {
+  .navbar {
     display: flex;
-    flex-direction: row;
-
-    ul {
-      display: inline-flex;
-      align-self: flex-end;
-    }
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
   }
 
-  span.fas {
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
     display: none;
   }
 
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
+  .logo:hover,
+  .nav-links:hover {
+    color: rgb(0, 0, 0);
   }
+
+  /* About me section */
 
   #about {
     display: flex;
@@ -482,7 +400,7 @@ a {
 
   #grid {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
 
   #work {
@@ -492,41 +410,11 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  header {
-    h1 {
-      font-size: 36px;
-      padding-left: 20px;
-    }
-
-    h2 {
-      font-size: 2em;
-    }
-  }
-
   .jumb-header {
     font-size: 2em;
   }
 
-  #main-nav {
-    display: flex;
-    flex-direction: row;
-
-    ul {
-      display: inline-flex;
-      align-self: flex-end;
-    }
-  }
-
-  span.fas {
-    display: none;
-  }
-
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-  }
+  /* About me section */
 
   #about {
     display: flex;
@@ -545,15 +433,12 @@ a {
     .about p {
       width: 100%;
       height: 100%;
+      margin: 0;
     }
 
     a {
       vertical-align: middle;
       font-size: 16px;
-    }
-
-    p {
-      margin: 0;
     }
   }
 
@@ -569,7 +454,7 @@ a {
 
   #grid {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
 
   #work {
@@ -579,39 +464,9 @@ a {
 }
 
 @media screen and (min-width: 1440px) {
-  header h1 {
-    font-size: 40px;
-  }
-
   .jumb-header {
     padding: 20px;
     font-size: 2em;
-  }
-
-  #main-nav {
-    display: flex;
-    flex-direction: row;
-
-    ul {
-      display: inline-flex;
-      align-self: flex-end;
-    }
-
-    a {
-      vertical-align: middle;
-      font-size: 20px;
-    }
-  }
-
-  span.fas {
-    display: none;
-  }
-
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
   }
 
   #about {
@@ -637,7 +492,6 @@ a {
     p {
       font-size: 20px;
       margin: 15px;
-      text-align: center;
       width: 100%;
       height: 100%;
     }

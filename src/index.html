@@ -5,31 +5,31 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="styles.css" rel="stylesheet" />
-    <script type="text/javascript"></script>
     <script
       crossorigin="anonymous"
       src="https://kit.fontawesome.com/54ae250420.js"
     ></script>
-    <script src="sandbox.js"></script>
+    <script src="sandbox.js" async defer></script>
     <title>Bogdan Niculescu | Web Developer</title>
   </head>
   <body>
-    <header>
-      <h1><a href="#">BN</a></h1>
-      <nav id="main-nav">
-        <ul>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#first-section">WORK</a>
-          </li>
-          <li>
-            <a href="#experience">EXPERIENCE</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-hamburger"></i>
+      </span>
+      <a href="#" class="logo">BN</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#about" class="nav-links">About</a>
+        </li>
+        <li>
+          <a href="#first-section" class="nav-links">Work</a>
+        </li>
+        <li>
+          <a href="#experience" class="nav-links">Experience</a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <section id="jumbotron">
         <div class="jumb-header">
@@ -123,7 +123,11 @@
             <img src="./photos/todo-list.png" alt="" />
             <div class="article-container">
               <h2>Todo list</h2>
-              <h3>An intresting project...!</h3>
+              <h3>
+                Small scale app challenge in React to demonstrate integration of
+                firestore database, reading from and writing to the database,
+                and displaying contents dynamically on the page.
+              </h3>
               <a
                 href="https://github.com/BogdanDevBst/to-do-list"
                 target="_blank"
@@ -144,12 +148,18 @@
             <img src="./photos/vojo.png" alt="" />
             <div class="article-container">
               <h2>Vojo</h2>
-              <h3>An intresting project...!</h3>
-              <a href="https://github.com/nology-tech/vojo" target="_blank"
+              <h3>
+                Our client project, completed through pair-programming over 4
+                weeks. An app to take input from the user in the form of
+                questionnaires, associate these answers and a DNA swab kit with
+                a back end algorithm via an API to generate personalised dietary
+                and health advice.
+              </h3>
+              <a href="" target="_blank"
                 ><span class="fab fa-github fa-3x"></span
               ></a>
               <p>
-                Tech: React, SCSS, JavaScript, Fetching API's, Firebase:
+                Tech: React, SCSS, JavaScript, CRUD operations; Firebase:
                 database, authentication, hosting.
               </p>
             </div>
@@ -216,14 +226,5 @@
         </section>
       </footer>
     </main>
-  </body>
-  <body>
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="/__/firebase/7.13.1/firebase-app.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
-    <script src="/__/firebase/7.13.1/firebase-auth.js"></script>
-    <script src="/__/firebase/7.13.1/firebase-firestore.js"></script>
   </body>
 </html>

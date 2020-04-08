@@ -13,79 +13,48 @@ body {
 }
 
 /* navbar */
-#main-nav.shown {
+.navbar {
+  font-size: 18px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(260deg, #c4c4c4 0%, #ffffff00 100%);
+  color: black;
+}
+
+.main-nav {
+  list-style-type: none;
   display: none;
 }
 
-header {
-  padding: 8px 16px;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 50px;
-  z-index: 1;
-}
-
-header a {
-  vertical-align: middle;
-}
-
-header a:hover {
-  cursor: pointer;
-  color: black;
-}
-
-header .fas:hover {
-  cursor: pointer;
-  color: black;
-}
-
-header h1 {
-  margin: 16px 0px;
-  font-size: 1em;
-}
-
-header h1 a {
+.nav-links,
+.logo {
   text-decoration: none;
   color: black;
-}
-
-header h1 a:visited {
-  color: black;
-}
-
-header nav ul {
-  list-style: none;
   text-transform: uppercase;
-  text-decoration: none;
+}
+
+.main-nav li {
   text-align: center;
+  margin: 15px auto;
 }
 
-header nav li {
-  display: block;
-}
-
-header nav a {
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
+.logo {
   display: inline-block;
-  padding: 8px;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
-header nav a:hover,
-header nav a:focus {
-  text-decoration: none;
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
   cursor: pointer;
   color: black;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
 }
 
 /* landing photo */
@@ -164,46 +133,9 @@ main {
 
 #about p {
   font-size: 18px;
-  text-align: center;
+  text-align: justify;
   color: black;
   padding-bottom: 15px;
-}
-
-/* Experience section */
-#experience h2,
-h3 {
-  text-align: center;
-  margin: 25px 0 25px 0;
-  color: white;
-  font-size: 20px;
-}
-
-#experience p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 15px auto;
-  text-align: center;
-  color: white;
-}
-
-#grid {
-  height: 40vh;
-}
-
-#grid .grid {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  grid-gap: 5vh;
-  -ms-grid-columns: 50px 50px 50px;
-      grid-template-columns: 50px 50px 50px;
-  -ms-grid-rows: 50px 50px 50px;
-      grid-template-rows: 50px 50px 50px;
-  font-size: 50px;
-  color: white;
 }
 
 /* Work Section */
@@ -283,37 +215,41 @@ a {
   color: white;
 }
 
-/* My CV */
-#cv {
-  height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* Experience section */
+#experience h2,
+h3 {
+  text-align: center;
+  margin: 25px 0 25px 0;
+  color: white;
+  font-size: 20px;
 }
 
-#cv button {
-  width: 130px;
-  height: 40px;
-  background-color: transparent;
-  margin: 0 auto;
-  border: 3px solid white;
+#experience p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 15px auto;
+  text-align: center;
   color: white;
 }
 
-#cv button:visited {
-  color: white;
-  border-color: white;
+#grid {
+  height: 50vh;
 }
 
-#cv button:hover {
-  color: black;
-  border-color: black;
+#grid .grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  grid-gap: 5vh;
+  -ms-grid-columns: 50px 50px 50px;
+      grid-template-columns: 50px 50px 50px;
+  -ms-grid-rows: 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px;
+  font-size: 50px;
+  color: white;
 }
 
 /* Footer */
@@ -356,12 +292,6 @@ a {
 
 /* media queries */
 @media screen and (min-width: 320px) {
-  header {
-    height: 100px;
-  }
-  header h1 {
-    font-size: 24px;
-  }
   #about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -399,37 +329,6 @@ a {
 }
 
 @media screen and (min-width: 425px) {
-  header {
-    padding: 16px;
-  }
-  header h1 {
-    font-size: 24px;
-  }
-  #main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #main-nav ul {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  span.fas {
-    display: none;
-  }
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-  }
   #about img {
     width: 250px;
     border-radius: 50%;
@@ -445,7 +344,7 @@ a {
   }
   #grid {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
   article {
     width: 350px;
@@ -456,38 +355,49 @@ a {
   article {
     width: 350px;
   }
-  h1 {
-    font-size: 36px;
-    padding-left: 20px;
-  }
-  .jumb-header h2 {
-    font-size: 2em;
-  }
-  #main-nav {
+  .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  #main-nav ul {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+  .main-nav li {
+    margin: 0;
   }
-  span.fas {
+  .nav-links {
+    margin-left: 40px;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  .navbar-toggle {
     display: none;
   }
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
+  .logo:hover,
+  .nav-links:hover {
+    color: black;
   }
+  /* About me section */
   #about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -526,7 +436,7 @@ a {
   }
   #grid {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
   #work {
     width: 100vw;
@@ -535,41 +445,10 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  header h1 {
-    font-size: 36px;
-    padding-left: 20px;
-  }
-  header h2 {
-    font-size: 2em;
-  }
   .jumb-header {
     font-size: 2em;
   }
-  #main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #main-nav ul {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  span.fas {
-    display: none;
-  }
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-  }
+  /* About me section */
   #about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -593,13 +472,11 @@ a {
   #about .about p {
     width: 100%;
     height: 100%;
+    margin: 0;
   }
   #about a {
     vertical-align: middle;
     font-size: 16px;
-  }
-  #about p {
-    margin: 0;
   }
   #experience {
     width: 100%;
@@ -611,7 +488,7 @@ a {
   }
   #grid {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
   #work {
     width: 100vw;
@@ -620,41 +497,9 @@ a {
 }
 
 @media screen and (min-width: 1440px) {
-  header h1 {
-    font-size: 40px;
-  }
   .jumb-header {
     padding: 20px;
     font-size: 2em;
-  }
-  #main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #main-nav ul {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  #main-nav a {
-    vertical-align: middle;
-    font-size: 20px;
-  }
-  span.fas {
-    display: none;
-  }
-  nav ul {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
   }
   #about {
     display: -webkit-box;
@@ -684,7 +529,6 @@ a {
   #about p {
     font-size: 20px;
     margin: 15px;
-    text-align: center;
     width: 100%;
     height: 100%;
   }
