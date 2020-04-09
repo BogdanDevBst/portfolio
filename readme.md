@@ -1,10 +1,8 @@
-# Project Title
-
-Portfolio
+# Portfolio
 
 ## Getting Started
 
-Clone down the repo to your local machine, open with a live server extension.
+Clone down the repo to your local machine, open with a live server extension, watch sass
 
 ## Prerequisites
 
@@ -16,9 +14,8 @@ Deployed via github pages.
 
 ## Built With
 
-HTML5 - Templating
-CSS3 - Styling
-Sass - Styling
+HTML5, Javascript and
+Sass
 
 ## Authors
 
