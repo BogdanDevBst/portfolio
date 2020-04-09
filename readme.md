@@ -14,9 +14,8 @@ Deployed via github pages.
 
 ## Built With
 
-HTML5 - Templating
-CSS3 - Styling
-Sass - Styling
+HTML5, Javascript and
+Sass
 
 ## Authors
 
