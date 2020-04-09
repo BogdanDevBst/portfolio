@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Clone down the repo to your local machine, open with a live server extension.
+Clone down the repo to your local machine, open with a live server extension, watch sass
 
 ## Prerequisites
 
