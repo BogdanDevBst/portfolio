@@ -179,6 +179,10 @@ article {
   border: white solid 1px;
 }
 
+article a {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 img {
   width: 100%;
   height: 25vh;
