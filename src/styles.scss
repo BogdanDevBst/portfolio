@@ -18,6 +18,10 @@ body {
   padding-bottom: 10px;
   background-image: linear-gradient(260deg, #c4c4c4 0%, #ffffff00 100%);
   color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: grey;
 }
 
 .main-nav {
@@ -29,7 +33,6 @@ body {
 .logo {
   text-decoration: none;
   color: black;
-  text-transform: uppercase;
 }
 
 .main-nav li {
@@ -133,6 +136,7 @@ main {
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 70px;
 }
 
 #second-section {
@@ -148,9 +152,6 @@ article {
   width: 400px;
   margin: 30px 10px 30px 10px;
   border: white solid 1px;
-  a {
-    background: rgba(0, 0, 0, 0.5);
-  }
 }
 
 img {
@@ -198,15 +199,18 @@ h3 {
   margin: 25px 0 25px 0;
   color: white;
   font-size: 16px;
+  padding-top: 45px;
 }
 
 #experience p {
   font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
+  // font-weight: 300;
+  line-height: 1.3;
   margin: 15px auto;
-  text-align: center;
+  text-align: justify;
   color: white;
+  padding: 8px;
+  width: 100%;
 }
 
 #grid {
@@ -229,7 +233,7 @@ h3 {
   padding: 20px;
   background-color: black;
   text-align: center;
-  height: 20vh;
+  height: 15vh;
 
   p {
     color: white;
@@ -321,7 +325,7 @@ h3 {
   }
 
   #experience {
-    height: 25vh;
+    height: 50vh;
   }
 
   #cv {
@@ -331,6 +335,7 @@ h3 {
 
   #grid {
     width: 100%;
+    height: 50vh;
   }
 
   article {
@@ -435,6 +440,16 @@ h3 {
   #experience {
     width: 100%;
     height: 35vh;
+  }
+
+  #experience p {
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 15px auto;
+    text-align: justify;
+    color: white;
+    padding: 8px;
+    width: 70%;
   }
 
   #grid {
