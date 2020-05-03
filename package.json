@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "firebase-login": "^1.0.0",
-    "firebase-tools": "^8.2.0"
+    "firebase-tools": "^8.2.0",
+    "nodejs": "^0.0.0"
   }
 }
