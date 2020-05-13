@@ -1,8 +1,5 @@
 {
   "dependencies": {
-    "firebase-login": "^1.0.0",
-    "firebase-tools": "^8.2.0",
-    "global": "^4.4.0",
     "sass": "^1.26.5"
   },
   "devDependencies": {
