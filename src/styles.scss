@@ -88,7 +88,7 @@ main {
 
   .jumb-header h2 {
     padding: 20px;
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 
@@ -198,18 +198,18 @@ h3 {
   text-align: center;
   margin: 20px 0 20px 0;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #experience h2 {
   text-align: center;
   margin: 20px 0 20px 0;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #experience p {
-  font-size: 16px;
+  font-size: 1rem;
   // font-weight: 300;
   line-height: 1.3;
   margin: 15px auto;
@@ -448,8 +448,23 @@ h3 {
     height: 35vh;
   }
 
+  #experience h2,
+  h3 {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  #experience h2 {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color: white;
+    font-size: 1.5rem;
+  }
+
   #experience p {
-    font-size: 16px;
+    font-size: 1.5rem;
     line-height: 1.3;
     margin: 15px auto;
     text-align: justify;
